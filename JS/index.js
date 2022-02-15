@@ -11,3 +11,7 @@ document.getElementById('equals').addEventListener('click', function () {
 document.getElementById('clear').addEventListener('click', function () {
       inputField.value = ''
 })
+
+document.getElementById('sqrt').addEventListener('click', function () {
+      inputField.value = Math.sqrt(eval(inputField.value))
+})
