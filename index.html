@@ -18,6 +18,7 @@
 
             .form-control {
                   font-family: 'Scientific Calculator LCD', sans-serif;
+                  font-size: 30px;
             }
 
             .calc-screen {
@@ -28,15 +29,54 @@
             button {
                   background-color: lightgoldenrodyellow;
             }
+
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                  .container {
+                        margin: 5rem auto;
+                  }
+            }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                  .container {
+                        margin: 5rem auto;
+                  }
+            }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                  .container {
+                        margin: 5rem auto;
+                  }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                  .container {
+                        margin: 5rem auto;
+                  }
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                  .container {
+                        margin: 5rem auto;
+                  }
+            }
       </style>
 </head>
 
 <body>
-      <div class="container" style="margin-top: 12rem;">
-            <div class="calc-body bg-dark rounded w-50 mx-auto">
+      <div class="container">
+            <div class="calc-body bg-dark rounded col-12 col-lg-5 mx-auto">
+                  <!-- Calculator Screen Starts -->
                   <div class="calc-screen p-4">
-                        <input type="text" class="form-control py-3 text-end bg-light" id="input" maxlength="20">
+                        <input type="text" class="form-control  text-end bg-light" id="input" maxlength="10">
                   </div>
+                  <!-- Calculator Screen Ends -->
+
+                  <!-- Calculator Buttons Starts -->
                   <div class="calc-buttons row py-4 ps-4 text-white mx-auto d-flex justify-content-between" id="keypad">
                         <div class="numbers col-7">
                               <div class="row row-cols-4 gap-3">
@@ -58,22 +98,24 @@
                         <div class="operations col-5">
                               <div class="row row-cols-2 gap-4">
                                     <div class="col row row-cols-1 gap-3">
+                                          <input class="btn btn-light d-block w-100" value="(" type="button">
                                           <input class="btn btn-light d-block w-100" value="*" type="button">
-                                          <input class="btn btn-light d-block w-100" value="/" type="button">
                                           <input class="btn btn-light d-block w-100" value="+" type="button">
                                           <button class="btn btn-light d-block w-100" type="button" id="sqrt">sqrt
                                           </button>
                                     </div>
                                     <div class="col row row-cols-1 gap-3">
-                                          <input class="btn btn-light d-block w-100" value="-" type="button">
-                                          <input class="btn btn-light d-block w-100" value="(" type="button">
                                           <input class="btn btn-light d-block w-100" value=")" type="button">
+                                          <input class="btn btn-light d-block w-100" value="/" type="button">
+
+                                          <input class="btn btn-light d-block w-100" value="-" type="button">
                                           <button class="btn btn-light d-block w-100" type="button"
                                                 id="equals">=</button>
                                     </div>
                               </div>
                         </div>
                   </div>
+                  <!-- Calculator Buttons Ends -->
             </div>
       </div>
 

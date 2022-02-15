@@ -6,6 +6,7 @@ document.querySelector('#keypad').addEventListener('click', function (event) {
 
 document.getElementById('equals').addEventListener('click', function () {
       inputField.value = eval(inputField.value);
+      inputField.maxLength = 10;
 })
 
 document.getElementById('clear').addEventListener('click', function () {
