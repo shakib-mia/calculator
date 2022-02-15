@@ -5,8 +5,8 @@ document.querySelector('#keypad').addEventListener('click', function (event) {
 })
 
 document.getElementById('equals').addEventListener('click', function () {
-      inputField.value = eval(inputField.value);
-      inputField.maxLength = 10;
+      inputField.value = eval(inputField.value).toFixed(10);
+
 })
 
 document.getElementById('clear').addEventListener('click', function () {
@@ -14,5 +14,5 @@ document.getElementById('clear').addEventListener('click', function () {
 })
 
 document.getElementById('sqrt').addEventListener('click', function () {
-      inputField.value = Math.sqrt(eval(inputField.value))
+      inputField.value = Math.sqrt(eval(inputField.value)).toFixed(12)
 })

@@ -1,0 +1,54 @@
+body {
+      background: url('https://media.istockphoto.com/photos/natural-wood-texture-picture-id1145602814?k=20&m=1145602814&s=612x612&w=0&h=dIJlMEyULYudmRnJZUSoOwfcF1nLBWWwHrjP764kM3s=');
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.form-control {
+      font-family: 'Scientific Calculator LCD', sans-serif;
+      font-size: 30px;
+}
+
+.calc-screen {
+      box-shadow: 0 5px 30px #000;
+}
+
+input,
+button {
+      background-color: lightgoldenrodyellow;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+      .container {
+            margin: 8.5rem auto;
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+      .container {
+            margin: 8.5rem auto;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+      .container {
+            margin: 5rem auto;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+      .container {
+            margin: 10rem auto;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+      .container {
+            margin: 10rem auto;
+      }
+}
