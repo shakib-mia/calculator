@@ -16,5 +16,8 @@ document.getElementById('clear').addEventListener('click', function () {
 })
 
 document.getElementById('sqrt').addEventListener('click', function () {
-      inputField.value = Math.sqrt(eval(inputField.value)).toFixed(11);
+      inputField.value = Math.sqrt(eval(inputField.value));
+      if (inputField.value.includes('.') && inputField.value.length > 12) {
+            inputField.value = eval(inputField.value).toFixed(11);
+      }
 })
