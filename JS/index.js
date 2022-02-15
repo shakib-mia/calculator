@@ -1,6 +1,6 @@
 let inputField = document.getElementById('input');
 
-document.getElementById('keypad').addEventListener('click', function (event) {
+document.querySelector('#keypad').addEventListener('click', function (event) {
       inputField.value = inputField.value + event.target.value
 })
 
