@@ -14,42 +14,46 @@
       <div class="container">
             <div class="calc-body bg-dark rounded w-50 mx-auto">
                   <div class="calc-screen px-4 pt-4">
-                        <input type="text" class="form-control py-3 text-end">
+                        <input type="text" class="form-control py-3 text-end" id="input">
                   </div>
-                  <div class="calc-buttons row p-4 text-white mx-auto d-flex justify-content-between">
+                  <div class="calc-buttons row p-4 text-white mx-auto d-flex justify-content-between" id="keypad">
                         <div class="numbers col-7">
                               <div class="row row-cols-4 gap-3">
-                                    <button class="btn btn-light">1</button>
-                                    <button class="btn btn-light">2</button>
-                                    <button class="btn btn-light">3</button>
-                                    <button class="btn btn-light">4</button>
-                                    <button class="btn btn-light">5</button>
-                                    <button class="btn btn-light">6</button>
-                                    <button class="btn btn-light">7</button>
-                                    <button class="btn btn-light">8</button>
-                                    <button class="btn btn-light">9</button>
-                                    <button class="btn btn-light">.</button>
-                                    <button class="btn btn-light">0</button>
-                                    <button class="btn btn-light">C</button>
+                                    <input class="btn btn-light" value="7" type="button">
+                                    <input class="btn btn-light" value="8" type="button">
+                                    <input class="btn btn-light" value="9" type="button">
+                                    <input class="btn btn-light" value="4" type="button">
+                                    <input class="btn btn-light" value="5" type="button">
+                                    <input class="btn btn-light" value="6" type="button">
+                                    <input class="btn btn-light" value="1" type="button">
+                                    <input class="btn btn-light" value="2" type="button">
+                                    <input class="btn btn-light" value="3" type="button">
+                                    <button class="btn btn-light" type="button" id="clear">C
+                                    </button>
+                                    <input class="btn btn-light" value="." type="button">
+                                    <input class="btn btn-light" value="0" type="button">
                               </div>
                         </div>
                         <div class="operations col-5">
                               <div class="row row-cols-2 gap-4">
                                     <div class="col row row-cols-1 gap-3">
-                                          <button class="btn btn-light d-block w-100">*</button>
-                                          <button class="btn btn-light d-block w-100">/</button>
-                                          <button class="btn btn-light d-block w-100">+</button>
+                                          <input class="btn btn-light d-block w-100" value="*" type="button">
+                                          <input class="btn btn-light d-block w-100" value="/" type="button">
+                                          <input class="btn btn-light d-block w-100" value="+" type="button">
                                     </div>
                                     <div class="col row row-cols-1 gap-3">
-                                          <button class="btn btn-light d-block w-100">-</button>
-                                          <button class="btn btn-light d-block w-100">=</button>
-                                          <button class="btn btn-light d-block w-100">%</button>
+                                          <input class="btn btn-light d-block w-100" value="-" type="button">
+                                          <button class="btn btn-light d-block w-100" type="button"
+                                                id="equals">=</button>
+                                          <input class="btn btn-light d-block w-100" value="%" type="button">
                                     </div>
                               </div>
                         </div>
                   </div>
             </div>
       </div>
+
+      <script src="index.js"></script>
 </body>
 
 </html>
